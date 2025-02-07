@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@source "../../../../plugins/boutet";
+
+@theme {
+  --color-blue-100: "#ccdaec";
+  --color-blue-200: "#99b5d9";
+  --color-blue-300: "#668fc6";
+  --color-blue-400: "#336ab3";
+  --color-blue-500: oklch(41.45% 0.1598 258.9);
+  --color-blue-600: "#003780";
+  --color-blue-700: "#002960";
+  --color-blue-800: "#001c40";
+  --color-blue-900: "#000e20";
+}
+
+@components {
+  .btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  }
+}

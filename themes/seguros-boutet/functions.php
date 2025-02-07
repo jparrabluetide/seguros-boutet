@@ -28,7 +28,7 @@ function bluetide_setup()
     )
   );
 
-  // add_theme_support('customize-selective-refresh-widgets');
+  add_theme_support('customize-selective-refresh-widgets');
 
   add_theme_support(
     'custom-logo',
@@ -43,13 +43,12 @@ function bluetide_setup()
 
 add_action('after_setup_theme', 'bluetide_setup');
 
-/*
 function bluetide_widgets_init()
 {
   register_sidebar(
     array(
-      'name' => esc_html__('Sidebar', 'bluetide'),
-      'id' => 'sidebar-1',
+      'name' => esc_html__('Social networks', 'bluetide'),
+      'id' => 'social-networks-1',
       'description' => esc_html__('Add widgets here.', 'bluetide'),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget' => '</section>',
@@ -59,12 +58,11 @@ function bluetide_widgets_init()
   );
 }
 add_action('widgets_init', 'bluetide_widgets_init');
-*/
 
 function bluetide_styles_scripts()
 {
-  wp_enqueue_style('bluetide-style', get_template_directory_uri() . '/dist/css/app.css', array(), VERSION);
-  wp_enqueue_script('bluetide-script', get_template_directory_uri() . '/dist/js/app.js', array('jquery'), VERSION, true);
+  wp_enqueue_style('bluetide-style', get_template_directory_uri() . '/public/css/app.css', array(), VERSION);
+  wp_enqueue_script('bluetide-script', get_template_directory_uri() . '/public/js/app.js', array('jquery'), VERSION, true);
 }
 
 add_action('wp_enqueue_scripts', 'bluetide_styles_scripts');

@@ -131,8 +131,8 @@ $RECYCLE.BIN/
 # uncomment the next line
 #/wp-content/themes
 /themes/seguros-boutet/node_modules/
-/themes/seguros-boutet/dist/
-/plugins/seguros-boutet/libs/
+/themes/seguros-boutet/public/
+/plugins/boutet/libs/
 
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualstudiocode,wordpress
