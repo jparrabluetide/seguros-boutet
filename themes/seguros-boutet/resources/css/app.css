@@ -11,10 +11,35 @@
   --color-blue-700: "#002960";
   --color-blue-800: "#001c40";
   --color-blue-900: "#000e20";
+
+  --font-lato: "Lato", sans-serif;
+}
+
+#menu-menu-1 {
+  @apply flex flex-col md:flex-row gap-4 justify-between py-3 text-[#333] font-lato;
+
+}
+
+#menu-menu-1 .menu-item a {
+  @apply hover:text-blue-500 pb-3 border-b-2 border-transparent hover:border-blue-500;
+}
+
+#menu-menu-1 .current-menu-item a,
+#mobile-menu-1 .current-menu-item a {
+  @apply text-blue-500 border-blue-500;
+}
+
+#mobile-menu-1 {
+  @apply w-[200px] bg-white p-3 shadow-sm rounded-sm text-[#333] font-lato;
+}
+
+#mobile-menu-1 .current-menu-item a {
+  @apply mb-2;
 }
 
 @components {
   .btn {
     @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
   }
+
 }
