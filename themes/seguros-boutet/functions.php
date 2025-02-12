@@ -68,6 +68,55 @@ function bluetide_widgets_init()
       'after_title' => '</h2>',
     )
   );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer text', 'bluetide'),
+      'id' => 'footer-text',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer description', 'bluetide'),
+      'id' => 'footer-desc',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer sitemap', 'bluetide'),
+      'id' => 'footer-sitemap',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer contact', 'bluetide'),
+      'id' => 'footer-contact',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
 }
 add_action('widgets_init', 'bluetide_widgets_init');
 

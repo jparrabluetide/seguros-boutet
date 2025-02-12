@@ -15,8 +15,17 @@
   --font-lato: "Lato", sans-serif;
 }
 
+
+@components {
+  .btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  }
+}
+
+/*Menu principal*/
+
 #menu-menu-1 {
-  @apply flex flex-col md:flex-row gap-4 justify-between py-3 text-[#333] font-lato;
+  @apply flex flex-col md:flex-row gap-1 lg:gap-4 justify-between py-3 text-[#333] font-lato;
 
 }
 
@@ -34,12 +43,27 @@
 }
 
 #mobile-menu-1 .current-menu-item a {
-  @apply mb-2;
+  @apply mb-1 md:mb-2;
 }
 
-@components {
-  .btn {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-  }
+/* Footer */
 
+#nav_menu-2 .widget-title {
+  @apply hidden;
+}
+
+#menu-menu-2 li {
+  @apply mb-3;
+}
+
+#menu-menu-2 li a {
+  @apply text-black text-base font-lato;
+}
+
+.footer-contact h4 {
+  @apply font-bold font-lato text-base text-black mb-0;
+}
+
+.footer-contact p {
+  @apply font-lato text-base text-black mb-1;
 }

@@ -23,7 +23,9 @@
   <?php wp_body_open(); ?>
   <div class="bg-blue-500 w-full py-5">
     <div class="container mx-auto px-4">
-      <?php dynamic_sidebar('social-networks-1'); ?>
+      <div class="w-full flex justify-end text-white">
+        <?php dynamic_sidebar('social-networks-1'); ?>
+      </div>
     </div>
   </div>
   <div class="container mx-auto px-4">
@@ -33,7 +35,7 @@
           <?php the_custom_logo(); ?>
         <?php endif; ?>
       </div>
-      <div class="hidden md:block">
+      <div class="hidden lg:block">
         <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'menu-menu-1')); ?>
       </div>
       <div class="flex items-center gap-4">
@@ -49,7 +51,7 @@
               fill="#0045A0" />
           </g>
         </svg>
-        <div class="text-blue-500 relative block md:hidden">
+        <div class="text-blue-500 relative block lg:hidden">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
             id="btnMainMenu">
             <g id="SVGRepo_bgCarrier" stroke-width="0" />
@@ -59,7 +61,7 @@
                 stroke-linejoin="round" />
             </g>
           </svg>
-          <div class="absolute top-6 right-0">
+          <div class="absolute top-6 right-0 z-10">
             <?php wp_nav_menu(array('theme_location' => 'menu-1', 'menu_id' => 'mobile-menu-1', 'menu_class' => 'hidden')); ?>
           </div>
         </div>
