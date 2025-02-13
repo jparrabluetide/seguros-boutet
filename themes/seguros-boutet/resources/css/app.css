@@ -67,3 +67,13 @@
 .footer-contact p {
   @apply font-lato text-base text-black mb-1;
 }
+
+/* Carruseles */
+
+.swiper-pagination-carousel1 .swiper-pagination-bullet {
+  @apply w-3 h-3 bg-[#D9D9D9] opacity-100;
+}
+
+.swiper-pagination-carousel1 .swiper-pagination-bullet-active {
+  @apply bg-[#3B8CED];
+}

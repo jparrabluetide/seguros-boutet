@@ -1,7 +1,8 @@
 <?php
-function boutet_widgets()
+function bluetide_widgets()
 {
   require_once dirname(__FILE__) . '/headerSocialNetworks.php';
+  require_once dirname(__FILE__) . '/carouselProducts.php';
 }
 
-add_action('widgets_init', 'boutet_widgets');
+add_action('widgets_init', 'bluetide_widgets');
