@@ -28,7 +28,7 @@ function bluetide_setup()
     )
   );
 
-  // add_theme_support('customize-selective-refresh-widgets');
+  add_theme_support('customize-selective-refresh-widgets');
 
   add_theme_support(
     'custom-logo',
@@ -43,13 +43,12 @@ function bluetide_setup()
 
 add_action('after_setup_theme', 'bluetide_setup');
 
-/*
 function bluetide_widgets_init()
 {
   register_sidebar(
     array(
-      'name' => esc_html__('Sidebar', 'bluetide'),
-      'id' => 'sidebar-1',
+      'name' => esc_html__('Social networks', 'bluetide'),
+      'id' => 'social-networks-1',
       'description' => esc_html__('Add widgets here.', 'bluetide'),
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget' => '</section>',
@@ -57,14 +56,74 @@ function bluetide_widgets_init()
       'after_title' => '</h2>',
     )
   );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer', 'bluetide'),
+      'id' => 'footer',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer text', 'bluetide'),
+      'id' => 'footer-text',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer description', 'bluetide'),
+      'id' => 'footer-desc',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer sitemap', 'bluetide'),
+      'id' => 'footer-sitemap',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => esc_html__('Footer contact', 'bluetide'),
+      'id' => 'footer-contact',
+      'description' => esc_html__('Add widgets here.', 'bluetide'),
+      'before_widget' => '<section id="%1$s" class="widget %2$s">',
+      'after_widget' => '</section>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+
 }
 add_action('widgets_init', 'bluetide_widgets_init');
-*/
 
 function bluetide_styles_scripts()
 {
-  wp_enqueue_style('bluetide-style', get_template_directory_uri() . '/dist/css/app.css', array(), VERSION);
-  wp_enqueue_script('bluetide-script', get_template_directory_uri() . '/dist/js/app.js', array('jquery'), VERSION, true);
+  wp_enqueue_style('bluetide-style', get_template_directory_uri() . '/public/css/app.css', array(), VERSION);
+  wp_enqueue_script('bluetide-script', get_template_directory_uri() . '/public/js/app.js', array('jquery', 'swiper'), VERSION, true);
 }
 
 add_action('wp_enqueue_scripts', 'bluetide_styles_scripts');
