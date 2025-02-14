@@ -24,10 +24,6 @@ class carouselProductsWidget extends WP_Widget
       )
     );
 
-    //var_dump($products);
-
-    // printf('<pre>%s</pre>', var_export(get_post_custom(get_the_ID()), true));
-
     ?>
     <div class="container mx-auto px-4 max-w-7xl pb-5">
       <?php if ($products->have_posts()): ?>
@@ -68,7 +64,7 @@ class carouselProductsWidget extends WP_Widget
         <div class="swiper-pagination swiper-pagination-carousel1"></div>
       <?php else: ?>
         <div class="col-span-12">
-          <p class="text-center text-xl text-primary-500">No hay resultados</p>
+          <p class="text-center text-xl text-primary-500"><?php _e('No posts found', 'bluetide'); ?></p>
         </div>
       <?php endif; ?>
     </div>

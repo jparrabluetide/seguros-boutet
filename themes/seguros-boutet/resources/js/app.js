@@ -9,4 +9,8 @@ jQuery(function () {
   if (jQuery('.carousel1').length > 0) {
     new Carousels().carousel1Init()
   }
+
+  if (jQuery('.carousel2').length > 0) {
+    new Carousels().carousel2Init()
+  }
 })
