@@ -1,0 +1,307 @@
+# Translation of WordPress - 6.7.x - Development in Spanish (Spain)
+# This file is distributed under the same license as the WordPress - 6.7.x - Development package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress - 6.7.x - Development\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2025-02-18 12:04-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.5\n"
+
+#. translators: Weekday.
+msgid "Saturday"
+msgstr "sábado"
+
+#. translators: Weekday.
+msgid "Friday"
+msgstr "viernes"
+
+#. translators: Weekday.
+msgid "Thursday"
+msgstr "jueves"
+
+#. translators: Weekday.
+msgid "Wednesday"
+msgstr "miércoles"
+
+#. translators: Weekday.
+msgid "Tuesday"
+msgstr "martes"
+
+#. translators: Weekday.
+msgid "Monday"
+msgstr "lunes"
+
+#. translators: Weekday.
+msgid "Sunday"
+msgstr "domingo"
+
+#. translators: Month name.
+msgid "December"
+msgstr "diciembre"
+
+#. translators: Month name.
+msgid "November"
+msgstr "noviembre"
+
+#. translators: Month name.
+msgid "October"
+msgstr "octubre"
+
+#. translators: Month name.
+msgid "September"
+msgstr "septiembre"
+
+#. translators: Month name.
+msgid "August"
+msgstr "agosto"
+
+#. translators: Month name.
+msgid "July"
+msgstr "julio"
+
+#. translators: Month name.
+msgid "June"
+msgstr "junio"
+
+#. translators: Month name.
+msgid "May"
+msgstr "mayo"
+
+#. translators: Month name.
+msgid "April"
+msgstr "abril"
+
+#. translators: Month name.
+msgid "March"
+msgstr "marzo"
+
+#. translators: Month name.
+msgid "February"
+msgstr "febrero"
+
+#. translators: Month name.
+msgid "January"
+msgstr "enero"
+
+msgid "Uncategorized"
+msgstr "Sin categoría"
+
+msgid "categories"
+msgstr "categorías"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "All categories"
+msgstr "Todas las categorías"
+
+msgid "Add new category"
+msgstr "Agregar categoría"
+
+msgctxt "block title"
+msgid "Terms List"
+msgstr "Lista de términos"
+
+msgid "Comments pagination"
+msgstr "Paginación de comentarios"
+
+msgid "Posts pagination"
+msgstr "Paginación de entradas"
+
+#. translators: %s: Template name.
+msgid "Template \"%s\" is not registered."
+msgstr "La plantilla «%s» no está registrada."
+
+msgctxt "block title"
+msgid "Read More"
+msgstr "Leer más"
+
+msgctxt "block title"
+msgid "No results"
+msgstr "Sin resultados"
+
+msgid "Item Archives"
+msgstr "Archivo de elementos"
+
+msgid "Item Attributes"
+msgstr "Elemento de atributos"
+
+msgid "Parent Item"
+msgstr "Elemento padre"
+
+msgid "Add new"
+msgstr "Agregar nuevo"
+
+msgid "Featured image"
+msgstr "Imágen destacada"
+
+msgid "Add featured image"
+msgstr "Agregar imágen destacada"
+
+msgid "Remove featured image"
+msgstr "Remover imágen destacada"
+
+msgid "Use as featured image"
+msgstr "Usar como imágen destacada"
+
+msgid "Excerpt"
+msgstr "Extracto"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Add icon"
+msgstr "Agregar icono"
+
+msgid "Add image"
+msgstr "Agregar imagen"
+
+msgid "Image photo"
+msgstr "Imágen de foto"
+
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! La página no fue encontrada."
+
+msgid "It looks like nothing was found at this location."
+msgstr "Lo que buscas no fue encontrado en esta página."
+
+msgid "Social networks"
+msgstr "Redes sociales"
+
+# · Page translate
+# · Products
+msgid "Products"
+msgstr "Productos"
+
+msgid "Product"
+msgstr "Producto"
+
+msgid "All products"
+msgstr "Todos los productos"
+
+msgid "Add new product"
+msgstr "Agregar nuevo producto"
+
+msgid "Edit product"
+msgstr "Editar producto"
+
+msgid "New product"
+msgstr "Nuevo producto"
+
+msgid "Update product"
+msgstr "Modificar producto"
+
+msgid "View product"
+msgstr "Ver producto"
+
+msgid "View products"
+msgstr "Ver productos"
+
+msgid "Search products"
+msgstr "Buscar productos"
+
+msgid "No products found"
+msgstr "No se encuentran productos"
+
+msgid "No products found in the trash"
+msgstr "No se encuentran productos en la basura"
+
+msgid "Insert to products"
+msgstr "Insertar a productos"
+
+msgid "Upload to product"
+msgstr "Subir a producto"
+
+msgid "List of products"
+msgstr "Lista de productos"
+
+msgid "Navigate to list of products"
+msgstr "Navegar a la lista de productos"
+
+msgid "Filter list of products"
+msgstr "Filtar lista de productos"
+
+msgid "Product description"
+msgstr "Descripción de productos"
+
+# · Team
+msgid "Teams"
+msgstr "Equipos"
+
+msgid "Team"
+msgstr "Equipo"
+
+msgid "All teams"
+msgstr "Todos los equipos"
+
+msgid "Add new team"
+msgstr "Agregar nuevo equipo"
+
+msgid "Edit team"
+msgstr "Editar equipo"
+
+msgid "New team"
+msgstr "Nuevo equipo"
+
+msgid "Update team"
+msgstr "Modificar equipo"
+
+msgid "View team"
+msgstr "Ver equipo"
+
+msgid "View teams"
+msgstr "Ver equipos"
+
+msgid "Search teams"
+msgstr "Buscar equipos"
+
+msgid "No teams found"
+msgstr "No se encuentran equipos"
+
+msgid "No teams found in the trash"
+msgstr "No se encuentran equipos en la basura"
+
+msgid "Insert to teams"
+msgstr "Insertar a equipos"
+
+msgid "Upload to team"
+msgstr "Subir a equipo"
+
+msgid "List of teams"
+msgstr "Lista de equipos"
+
+msgid "Navigate to list of teams"
+msgstr "Navegar a la lista de equipos"
+
+msgid "Filter list of teams"
+msgstr "Filtar lista de equipos"
+
+msgid "Team description"
+msgstr "Descripción de equipos"
+
+# · Fields
+# · Products
+msgid "Product info"
+msgstr "Información de producto"
+
+msgid "Image icon"
+msgstr "Imagen de ícono"
+
+msgid "Image card"
+msgstr "Imagen de tarjeta"
+
+msgid "Image banner"
+msgstr "Imagen de banner"
+
+msgid "Position"
+msgstr "Posición"
+
+msgid "Team info"
+msgstr "Información de equipo"

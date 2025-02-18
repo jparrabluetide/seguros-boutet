@@ -131,6 +131,7 @@
 #input_2_1_3_container,
 #input_2_1_6_container
 .ginput_container,
+.ginput_container_text,
 .ginput_container_email,
 .ginput_container_phone,
 .ginput_container_post_title
@@ -141,6 +142,7 @@
 #input_1_8_3_container input ,
 #input_1_8_6_container input ,
 #input_2_1_3_container input ,
+#input_2_1_6_container input ,
 #input_2_1_6_container input ,
 .ginput_container input
 {
