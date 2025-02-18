@@ -86,27 +86,110 @@
   @apply bg-white shadow-md px-2 py-3 rounded-md w-fit;
 }
 
+.tabs-2 .e-n-tabs-heading {
+  @apply border-b border-blue-500 pb-4;
+}
+
+.tabs-2 ul {
+  @apply list-disc list-inside;
+}
+
 /*Formularios*/
 
 #gform_wrapper_1 .gform_title,
-#gform_wrapper_1 .gform_description {
+#gform_wrapper_1 .gform_description,
+.form-product_wrapper .gform_title {
   @apply hidden;
 }
 
 #gform_wrapper_1 .gfield input[type="text"],
 #gform_wrapper_1 .gfield input[type="email"],
-#gform_wrapper_1 .gfield textarea {
-  @apply border border-blue-500 rounded-md;
+#gform_wrapper_1 .gfield textarea,
+.form-product input[type="text"],
+.form-product input[type="email"],
+.form-product input[type="tel"],
+.form-product input[type="file"],
+.form-product .gfield textarea
+{
+  @apply border border-blue-500! rounded-md!;
 }
+
 
 #gform_wrapper_1 .gfield_error input[type="text"],
 #gform_wrapper_1 .gfield_error input[type="email"],
-#gform_wrapper_1 .gfield_error textarea {
-  @apply border border-red-500;
+#gform_wrapper_1 .gfield_error textarea,
+.form-product .gfield_error input[type="text"],
+.form-product .gfield_error input[type="email"],
+.form-product .gfield_error input[type="tel"],
+.form-product .gfield_error textarea
+{
+  @apply border border-red-500!;
 }
 
-/*
-gfield gfield--type-email gfield--input-type-email gfield--width-half gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible
-gfield gfield--type-name gfield--input-type-name gfield--width-full gfield_error gfield_contains_required field_sublabel_below gfield--no-description field_description_below field_validation_below gfield_visibility_visible
-ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row
-*/
+#input_1_8_3_container, 
+#input_1_8_6_container,
+#input_2_1_3_container,
+#input_2_1_6_container
+.ginput_container,
+.ginput_container_email,
+.ginput_container_phone,
+.ginput_container_post_title
+{
+  @apply relative!;
+}
+
+#input_1_8_3_container input ,
+#input_1_8_6_container input ,
+#input_2_1_3_container input ,
+#input_2_1_6_container input ,
+.ginput_container input
+{
+  @apply pr-10;
+}
+
+
+#input_1_8_3_container::before ,
+#input_1_8_6_container::before ,
+#input_2_1_3_container::before ,
+#input_2_1_6_container::before ,
+.ginput_container::before
+{
+  @apply block top-2 right-4 absolute w-6 h-6;
+  content: "";
+}
+
+#input_1_8_3_container::before ,
+#input_1_8_6_container::before ,
+#input_2_1_3_container::before,
+#input_2_1_6_container::before
+{
+  background-image: url("../../images/icons/account_circle.svg");
+}
+
+.ginput_container_email::before 
+{
+  background-image: url("../../images/icons/mail.svg");
+}
+
+.ginput_container_text::before 
+{
+  background-image: url("../../images/icons/arrow_downward_alt.svg");
+}
+
+.ginput_container_phone::before 
+{
+  background-image: url("../../images/icons/call.svg");
+}
+
+.ginput_container_post_title::before 
+{
+  background-image: url("../../images/icons/badge.svg");
+}
+
+#gform_submit_button_1,
+#gform_submit_button_2
+ {
+  background: linear-gradient(90deg, #69C 0%, #0045A0 100%);
+  @apply rounded-lg py-3 px-8 text-white font-bold border-0;
+}
+

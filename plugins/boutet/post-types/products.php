@@ -36,7 +36,7 @@ $args = array(
   'supports' => array('title'),
   'taxonomies' => array('product-category'),
   'hierarchical' => false,
-  'public' => false,
+  'public' => true,
   'show_ui' => true,
   'show_in_menu' => true,
   'menu_position' => 6,
@@ -58,6 +58,5 @@ register_post_type('product', $args);
  */
 
 add_image_size('product-icon', 110, 110, true);
-add_image_size('product-card', 480, 330, true);
 add_image_size('product-card', 480, 330, true);
 add_image_size('product-banner', 1920, 360, true);

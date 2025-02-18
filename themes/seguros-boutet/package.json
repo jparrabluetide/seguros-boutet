@@ -6,7 +6,8 @@
   "scripts": {
     "prod": "mix --production",
     "dev": "mix",
-    "watch": "mix watch"
+    "watch": "mix watch",
+    "watch-poll": "npm run watch -- --watch-poll"
   },
   "author": "Sebaspa",
   "license": "ISC",

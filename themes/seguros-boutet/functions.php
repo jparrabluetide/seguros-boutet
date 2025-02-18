@@ -128,3 +128,10 @@ function bluetide_styles_scripts()
 
 add_action('wp_enqueue_scripts', 'bluetide_styles_scripts');
 
+/**
+ * Habilitar Elementor para un CPT
+ */
+function elementor_for_cpt() {
+  add_post_type_support( 'product', 'elementor' ); // Cambia 'product' por tu CPT
+}
+add_action( 'init', 'elementor_for_cpt' );
