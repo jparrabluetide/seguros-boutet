@@ -24,8 +24,8 @@ class CardServicesWidget extends WP_Widget
       )
     );
 
-    ?>
-    <div class="container mx-auto px-4 max-w-7xl">
+?>
+    <div class="container mx-auto px-4">
       <?php if ($data->have_posts()): ?>
         <div class="grid grid-cols-12 gap-6">
           <?php while ($data->have_posts()):
@@ -48,9 +48,9 @@ class CardServicesWidget extends WP_Widget
                 <img src="<?php echo $imageCardSrc[0]; ?>" alt="<?php the_title(); ?>"
                   class="w-full object-cover rounded-t-lg" />
                 <div class="absolute -bottom-8 right-6">
-                  <div class="bg-white rounded-md p-2">
+                  <a class="bg-white relative block rounded-md p-2" href="<?php the_permalink(); ?>">
                     <img src="<?php echo $imageIconSrc[0]; ?>" alt="icon <?php the_title(); ?>" class="w-16 h-16">
-                  </div>
+                  </a>
                 </div>
               </div>
               <div class="pt-16 px-4 md:px-6 pb-6 h-auto">
@@ -69,7 +69,7 @@ class CardServicesWidget extends WP_Widget
         </div>
       <?php endif; ?>
     </div>
-    <?php
+  <?php
   }
 
   public function update($new_instance, $old_instance)
@@ -84,7 +84,7 @@ class CardServicesWidget extends WP_Widget
     // Retrieve widget options from $instance
     $numberPost = isset($instance['numberPost']) ? $instance['numberPost'] : 9;
     // Display widget settings form
-    ?>
+  ?>
     <p>
       <label for="<?php echo $this->get_field_id('numberPost'); ?>">
         <?php _e('Number of posts'); ?>:
@@ -93,9 +93,8 @@ class CardServicesWidget extends WP_Widget
         name="<?php echo $this->get_field_name('numberPost'); ?>" type="number" min="1" max="6"
         value="<?php echo esc_attr($numberPost); ?>" />
     </p>
-    <?php
+<?php
   }
-
 }
 
 register_widget('CardServicesWidget');
